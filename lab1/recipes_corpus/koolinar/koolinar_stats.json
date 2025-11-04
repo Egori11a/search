@@ -1,0 +1,12 @@
+{
+  "num_documents": 150,
+  "total_raw_bytes": 16326667,
+  "total_text_bytes": 2826453,
+  "total_words": 234015,
+  "avg_raw_bytes": 108844.44666666667,
+  "avg_text_bytes": 18843.02,
+  "avg_words": 1560.1,
+  "median_raw_bytes": 108939.0,
+  "median_text_bytes": 18624.0,
+  "median_words": 1544.0
+}
