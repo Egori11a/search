@@ -1,0 +1,5 @@
+/home/egor/search/6/build/CMakeFiles/core.dir
+/home/egor/search/6/build/CMakeFiles/lab6_build_index.dir
+/home/egor/search/6/build/CMakeFiles/lab6_bool_search.dir
+/home/egor/search/6/build/CMakeFiles/edit_cache.dir
+/home/egor/search/6/build/CMakeFiles/rebuild_cache.dir

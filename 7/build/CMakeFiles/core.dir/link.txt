@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcore.a CMakeFiles/core.dir/src/common.cpp.o CMakeFiles/core.dir/src/tokenizer.cpp.o CMakeFiles/core.dir/src/stemmer_ru.cpp.o
+/usr/bin/ranlib libcore.a

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/lab5_search.dir/src/lab5_search.cpp.o -o lab5_search  libcore.a 

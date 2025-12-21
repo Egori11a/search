@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/lab7_server.dir/src/lab7_server.cpp.o -o lab7_server  libcore.a 

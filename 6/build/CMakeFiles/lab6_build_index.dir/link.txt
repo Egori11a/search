@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/lab6_build_index.dir/src/lab6_build_index.cpp.o -o lab6_build_index  libcore.a 

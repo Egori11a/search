@@ -1,0 +1,21 @@
+corpus:
+  text_dirs:
+    - /home/egor/search/1/recipes_corpus/povarenok/text
+    - /home/egor/search/1/recipes_corpus/koolinar/text
+  max_docs: 2000
+
+tokenizer:
+  lowercase: true
+  normalize_yo: true
+  keep_numbers: true
+  min_len: 2
+
+zipf:
+  max_docs: 2000
+
+search:
+  max_docs: 2000
+  k1: 1.5
+  b: 0.75
+  top_k: 10
+  use_stemming: true

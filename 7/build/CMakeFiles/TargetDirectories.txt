@@ -1,0 +1,5 @@
+/home/egor/search/7/build/CMakeFiles/core.dir
+/home/egor/search/7/build/CMakeFiles/lab7_cli.dir
+/home/egor/search/7/build/CMakeFiles/lab7_server.dir
+/home/egor/search/7/build/CMakeFiles/edit_cache.dir
+/home/egor/search/7/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/lab4_zipf.dir/src/lab4_zipf.cpp.o -o lab4_zipf  libcore.a 

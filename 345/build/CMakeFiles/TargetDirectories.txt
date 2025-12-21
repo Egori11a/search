@@ -1,0 +1,6 @@
+/home/egor/search/345/build/CMakeFiles/core.dir
+/home/egor/search/345/build/CMakeFiles/lab3_token_stats.dir
+/home/egor/search/345/build/CMakeFiles/lab4_zipf.dir
+/home/egor/search/345/build/CMakeFiles/lab5_search.dir
+/home/egor/search/345/build/CMakeFiles/edit_cache.dir
+/home/egor/search/345/build/CMakeFiles/rebuild_cache.dir

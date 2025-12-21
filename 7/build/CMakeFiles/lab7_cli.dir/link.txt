@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/lab7_cli.dir/src/lab7_cli.cpp.o -o lab7_cli  libcore.a 
