@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/lab4_zipf.dir/src/lab4_zipf.cpp.o -o lab4_zipf  libcore.a 
+/usr/bin/c++ CMakeFiles/lab4_zipf.dir/src/lab4_zipf.cpp.o -o lab4_zipf  libcore.a -lmongoc-1.0 -lbson-1.0 

@@ -87,12 +87,12 @@ clean: CMakeFiles/lab5_search.dir/clean
 CMakeFiles/core.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/egor/search/345/build/CMakeFiles --progress-num=1,2,3,4 "Built target core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/egor/search/345/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target core"
 .PHONY : CMakeFiles/core.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor/search/345/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor/search/345/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/core.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor/search/345/build/CMakeFiles 0
 .PHONY : CMakeFiles/core.dir/rule
@@ -113,12 +113,12 @@ CMakeFiles/core.dir/clean:
 CMakeFiles/lab3_token_stats.dir/all: CMakeFiles/core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3_token_stats.dir/build.make CMakeFiles/lab3_token_stats.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab3_token_stats.dir/build.make CMakeFiles/lab3_token_stats.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/egor/search/345/build/CMakeFiles --progress-num=5,6 "Built target lab3_token_stats"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/egor/search/345/build/CMakeFiles --progress-num=6,7 "Built target lab3_token_stats"
 .PHONY : CMakeFiles/lab3_token_stats.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lab3_token_stats.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor/search/345/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor/search/345/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab3_token_stats.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor/search/345/build/CMakeFiles 0
 .PHONY : CMakeFiles/lab3_token_stats.dir/rule
@@ -139,12 +139,12 @@ CMakeFiles/lab3_token_stats.dir/clean:
 CMakeFiles/lab4_zipf.dir/all: CMakeFiles/core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab4_zipf.dir/build.make CMakeFiles/lab4_zipf.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab4_zipf.dir/build.make CMakeFiles/lab4_zipf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/egor/search/345/build/CMakeFiles --progress-num=7,8 "Built target lab4_zipf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/egor/search/345/build/CMakeFiles --progress-num=8,9 "Built target lab4_zipf"
 .PHONY : CMakeFiles/lab4_zipf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lab4_zipf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor/search/345/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor/search/345/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab4_zipf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor/search/345/build/CMakeFiles 0
 .PHONY : CMakeFiles/lab4_zipf.dir/rule
@@ -165,12 +165,12 @@ CMakeFiles/lab4_zipf.dir/clean:
 CMakeFiles/lab5_search.dir/all: CMakeFiles/core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_search.dir/build.make CMakeFiles/lab5_search.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_search.dir/build.make CMakeFiles/lab5_search.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/egor/search/345/build/CMakeFiles --progress-num=9,10 "Built target lab5_search"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/egor/search/345/build/CMakeFiles --progress-num=10,11 "Built target lab5_search"
 .PHONY : CMakeFiles/lab5_search.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lab5_search.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor/search/345/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor/search/345/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab5_search.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor/search/345/build/CMakeFiles 0
 .PHONY : CMakeFiles/lab5_search.dir/rule

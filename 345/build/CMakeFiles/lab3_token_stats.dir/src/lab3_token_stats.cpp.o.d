@@ -133,7 +133,8 @@ CMakeFiles/lab3_token_stats.dir/src/lab3_token_stats.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/egor/search/345/src/tokenizer.h /usr/include/c++/11/iostream \
+ /home/egor/search/345/src/tokenizer.h \
+ /home/egor/search/345/src/mongo_corpus.h /usr/include/c++/11/iostream \
  /usr/include/c++/11/ostream /usr/include/c++/11/ios \
  /usr/include/c++/11/exception /usr/include/c++/11/bits/exception_ptr.h \
  /usr/include/c++/11/bits/cxxabi_init_exception.h \

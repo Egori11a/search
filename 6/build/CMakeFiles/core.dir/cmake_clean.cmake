@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/core.dir/src/common.cpp.o"
   "CMakeFiles/core.dir/src/common.cpp.o.d"
+  "CMakeFiles/core.dir/src/mongo_corpus.cpp.o"
+  "CMakeFiles/core.dir/src/mongo_corpus.cpp.o.d"
   "CMakeFiles/core.dir/src/stemmer_ru.cpp.o"
   "CMakeFiles/core.dir/src/stemmer_ru.cpp.o.d"
   "CMakeFiles/core.dir/src/tokenizer.cpp.o"

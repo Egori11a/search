@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/lab6_bool_search.dir/src/lab6_bool_search.cpp.o -o lab6_bool_search  libcore.a 
+/usr/bin/c++ CMakeFiles/lab6_bool_search.dir/src/lab6_bool_search.cpp.o -o lab6_bool_search  libcore.a -lmongoc-1.0 -lbson-1.0 

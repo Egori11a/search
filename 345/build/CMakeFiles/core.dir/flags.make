@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/usr/include/libmongoc-1.0 -I/usr/include/libbson-1.0
 
 CXX_FLAGS = -std=gnu++17
 

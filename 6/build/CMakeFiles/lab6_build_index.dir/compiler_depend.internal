@@ -4,7 +4,7 @@
 CMakeFiles/lab6_build_index.dir/src/lab6_build_index.cpp.o
  /home/egor/search/6/src/lab6_build_index.cpp
  /usr/include/stdc-predef.h
- /home/egor/search/6/src/common.h
+ /home/egor/search/6/src/tokenizer.h
  /usr/include/c++/11/string
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h
@@ -159,14 +159,185 @@ CMakeFiles/lab6_build_index.dir/src/lab6_build_index.cpp.o
  /usr/include/c++/11/bits/stl_vector.h
  /usr/include/c++/11/bits/stl_bvector.h
  /usr/include/c++/11/bits/vector.tcc
- /home/egor/search/6/src/tokenizer.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc.h
+ /usr/include/libbson-1.0/bson/bson.h
+ /usr/include/libbson-1.0/bson/bson-compat.h
+ /usr/include/libbson-1.0/bson/bson-prelude.h
+ /usr/include/libbson-1.0/bson/bson-config.h
+ /usr/include/libbson-1.0/bson/bson-macros.h
+ /usr/include/c++/11/algorithm
+ /usr/include/c++/11/utility
+ /usr/include/c++/11/bits/stl_relops.h
+ /usr/include/c++/11/bits/stl_algo.h
+ /usr/include/c++/11/bits/algorithmfwd.h
+ /usr/include/c++/11/bits/stl_heap.h
+ /usr/include/c++/11/bits/stl_tempbuf.h
+ /usr/include/c++/11/bits/uniform_int_dist.h
+ /usr/include/c++/11/pstl/glue_algorithm_defs.h
+ /usr/include/c++/11/functional
+ /usr/include/c++/11/tuple
+ /usr/include/c++/11/array
+ /usr/include/c++/11/bits/uses_allocator.h
+ /usr/include/c++/11/bits/invoke.h
+ /usr/include/c++/11/bits/refwrap.h
+ /usr/include/c++/11/bits/std_function.h
+ /usr/include/c++/11/typeinfo
+ /usr/include/c++/11/unordered_map
+ /usr/include/c++/11/ext/aligned_buffer.h
+ /usr/include/c++/11/bits/hashtable.h
+ /usr/include/c++/11/bits/hashtable_policy.h
+ /usr/include/c++/11/bits/enable_special_members.h
+ /usr/include/c++/11/bits/node_handle.h
+ /usr/include/c++/11/bits/unordered_map.h
+ /usr/include/c++/11/bits/erase_if.h
+ /usr/include/c++/11/pstl/execution_defs.h
+ /usr/include/unistd.h
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h
+ /usr/include/x86_64-linux-gnu/bits/environments.h
+ /usr/include/x86_64-linux-gnu/bits/confname.h
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h
+ /usr/include/linux/close_range.h
+ /usr/include/x86_64-linux-gnu/sys/time.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h
+ /usr/include/limits.h
+ /usr/include/x86_64-linux-gnu/bits/posix1_lim.h
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h
+ /usr/include/linux/limits.h
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h
+ /usr/include/fcntl.h
+ /usr/include/x86_64-linux-gnu/bits/fcntl.h
+ /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h
+ /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h
+ /usr/include/linux/falloc.h
+ /usr/include/x86_64-linux-gnu/bits/stat.h
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h
+ /usr/include/x86_64-linux-gnu/sys/stat.h
+ /usr/include/x86_64-linux-gnu/bits/statx.h
+ /usr/include/linux/stat.h
+ /usr/include/linux/types.h
+ /usr/include/x86_64-linux-gnu/asm/types.h
+ /usr/include/asm-generic/types.h
+ /usr/include/asm-generic/int-ll64.h
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h
+ /usr/include/asm-generic/bitsperlong.h
+ /usr/include/linux/posix_types.h
+ /usr/include/linux/stddef.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h
+ /usr/include/asm-generic/posix_types.h
+ /usr/include/x86_64-linux-gnu/bits/statx-generic.h
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h
+ /usr/include/c++/11/stdlib.h
+ /usr/include/string.h
+ /usr/include/strings.h
+ /usr/include/inttypes.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h
+ /usr/include/libbson-1.0/bson/bson-atomic.h
+ /usr/include/libbson-1.0/bson/bson-context.h
+ /usr/include/libbson-1.0/bson/bson-types.h
+ /usr/include/libbson-1.0/bson/bson-endian.h
+ /usr/include/libbson-1.0/bson/bson-clock.h
+ /usr/include/libbson-1.0/bson/bson-decimal128.h
+ /usr/include/libbson-1.0/bson/bson-error.h
+ /usr/include/libbson-1.0/bson/bson-iter.h
+ /usr/include/libbson-1.0/bson/bson.h
+ /usr/include/libbson-1.0/bson/bson-json.h
+ /usr/include/libbson-1.0/bson/bson-keys.h
+ /usr/include/libbson-1.0/bson/bson-md5.h
+ /usr/include/libbson-1.0/bson/bson-memory.h
+ /usr/include/libbson-1.0/bson/bson-oid.h
+ /usr/include/libbson-1.0/bson/bson-reader.h
+ /usr/include/libbson-1.0/bson/bson-string.h
+ /usr/include/libbson-1.0/bson/bson-utf8.h
+ /usr/include/libbson-1.0/bson/bson-value.h
+ /usr/include/libbson-1.0/bson/bson-version.h
+ /usr/include/libbson-1.0/bson/bson-version-functions.h
+ /usr/include/libbson-1.0/bson/bson-writer.h
+ /usr/include/libbson-1.0/bson/bcon.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-macros.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-prelude.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-apm.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-host-list.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-server-description.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-read-prefs.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-config.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-topology-description.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-bulk-operation.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-write-concern.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-change-stream.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-client.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-client-side-encryption.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-collection.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-flags.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-cursor.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-index.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-read-concern.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-find-and-modify.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-database.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-gridfs.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-stream.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-iovec.h
+ /usr/include/x86_64-linux-gnu/sys/uio.h
+ /usr/include/x86_64-linux-gnu/bits/uio-ext.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-socket.h
+ /usr/include/arpa/inet.h
+ /usr/include/netinet/in.h
+ /usr/include/x86_64-linux-gnu/sys/socket.h
+ /usr/include/x86_64-linux-gnu/bits/socket.h
+ /usr/include/x86_64-linux-gnu/bits/socket_type.h
+ /usr/include/x86_64-linux-gnu/bits/sockaddr.h
+ /usr/include/x86_64-linux-gnu/asm/socket.h
+ /usr/include/asm-generic/socket.h
+ /usr/include/x86_64-linux-gnu/asm/sockios.h
+ /usr/include/asm-generic/sockios.h
+ /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h
+ /usr/include/x86_64-linux-gnu/bits/in.h
+ /usr/include/poll.h
+ /usr/include/x86_64-linux-gnu/sys/poll.h
+ /usr/include/x86_64-linux-gnu/bits/poll.h
+ /usr/include/netdb.h
+ /usr/include/rpc/netdb.h
+ /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h
+ /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h
+ /usr/include/x86_64-linux-gnu/bits/netdb.h
+ /usr/include/netinet/tcp.h
+ /usr/include/x86_64-linux-gnu/sys/un.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-gridfs-file.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-gridfs-file-list.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-server-api.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-optional.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-ssl.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-uri.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-client-pool.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-error.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-gridfs-bucket.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-gridfs-file-page.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-init.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-matcher.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-handshake.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-opcode.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-log.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-client-session.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-stream-buffered.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-stream-file.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-stream-gridfs.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-stream-socket.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-version.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-version-functions.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-rand.h
+ /usr/include/libmongoc-1.0/mongoc/mongoc-stream-tls.h
  /usr/include/c++/11/iostream
  /usr/include/c++/11/ostream
  /usr/include/c++/11/ios
  /usr/include/c++/11/exception
  /usr/include/c++/11/bits/exception_ptr.h
  /usr/include/c++/11/bits/cxxabi_init_exception.h
- /usr/include/c++/11/typeinfo
  /usr/include/c++/11/bits/nested_exception.h
  /usr/include/c++/11/bits/ios_base.h
  /usr/include/c++/11/bits/locale_classes.h
@@ -200,6 +371,4 @@ CMakeFiles/lab6_build_index.dir/src/lab6_build_index.cpp.o
  /usr/include/c++/11/ctime
  /usr/include/c++/11/bits/parse_numbers.h
  /usr/include/c++/11/cstring
- /usr/include/string.h
- /usr/include/strings.h
 

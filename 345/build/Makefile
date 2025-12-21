@@ -264,6 +264,30 @@ src/lab5_search.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5_search.dir/build.make CMakeFiles/lab5_search.dir/src/lab5_search.cpp.s
 .PHONY : src/lab5_search.cpp.s
 
+src/mongo_corpus.o: src/mongo_corpus.cpp.o
+.PHONY : src/mongo_corpus.o
+
+# target to build an object file
+src/mongo_corpus.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/src/mongo_corpus.cpp.o
+.PHONY : src/mongo_corpus.cpp.o
+
+src/mongo_corpus.i: src/mongo_corpus.cpp.i
+.PHONY : src/mongo_corpus.i
+
+# target to preprocess a source file
+src/mongo_corpus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/src/mongo_corpus.cpp.i
+.PHONY : src/mongo_corpus.cpp.i
+
+src/mongo_corpus.s: src/mongo_corpus.cpp.s
+.PHONY : src/mongo_corpus.s
+
+# target to generate assembly for a file
+src/mongo_corpus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/src/mongo_corpus.cpp.s
+.PHONY : src/mongo_corpus.cpp.s
+
 src/stemmer_ru.o: src/stemmer_ru.cpp.o
 .PHONY : src/stemmer_ru.o
 
@@ -336,6 +360,9 @@ help:
 	@echo "... src/lab5_search.o"
 	@echo "... src/lab5_search.i"
 	@echo "... src/lab5_search.s"
+	@echo "... src/mongo_corpus.o"
+	@echo "... src/mongo_corpus.i"
+	@echo "... src/mongo_corpus.s"
 	@echo "... src/stemmer_ru.o"
 	@echo "... src/stemmer_ru.i"
 	@echo "... src/stemmer_ru.s"

@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/lab5_search.dir/src/lab5_search.cpp.o -o lab5_search  libcore.a 
+/usr/bin/c++ CMakeFiles/lab5_search.dir/src/lab5_search.cpp.o -o lab5_search  libcore.a -lmongoc-1.0 -lbson-1.0 

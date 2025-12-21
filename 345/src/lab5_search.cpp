@@ -1,6 +1,7 @@
 #include "common.h"
 #include "tokenizer.h"
 #include "stemmer_ru.h"
+#include "mongo_corpus.h"
 
 #include <iostream>
 #include <fstream>
@@ -188,18 +189,28 @@ int main(int argc, char** argv) {
 
   RussianStemmer stemmer;
 
-  std::vector<std::string> files;
-  for (size_t i = 0; i < text_dirs.size(); ++i) {
-    list_txt_files(text_dirs[i], files);
-  }
-  if ((int)files.size() > max_docs) files.resize((size_t)max_docs);
+    MongoConfig mcfg;
+  int mongo_max_docs = max_docs;
+  std::string merr;
 
-  const int N = (int)files.size();
+  if (!LoadMongoConfigFromYaml(cfg_path, mcfg, mongo_max_docs, merr)) {
+    std::cerr << "Failed to load mongo config from yaml: " << merr << "\n";
+    return 1;
+  }
+
+  std::vector<CorpusDoc> docs;
+  if (!LoadDocsFromMongo(mcfg, mongo_max_docs, docs, merr)) {
+    std::cerr << "Failed to load docs from mongo: " << merr << "\n";
+    return 1;
+  }
+
+  const int N = (int)docs.size();
+
   std::vector<std::string> doc_ids;
-  doc_ids.reserve(files.size());
+  doc_ids.reserve((size_t)N);
 
   std::vector<int> doc_len;
-  doc_len.reserve(files.size());
+  doc_len.reserve((size_t)N);
 
   std::vector<Triple> triples;
   triples.reserve(300000);
@@ -209,16 +220,12 @@ int main(int argc, char** argv) {
   auto t0 = std::chrono::steady_clock::now();
 
   for (int di = 0; di < N; ++di) {
-    std::string text;
-    if (!read_file_utf8(files[di], text)) {
-      doc_ids.push_back(doc_id_from_path(files[di]));
-      doc_len.push_back(0);
-      continue;
-    }
+    doc_ids.push_back(docs[(size_t)di].doc_key);
 
-    doc_ids.push_back(doc_id_from_path(files[di]));
+    const std::string& text = docs[(size_t)di].text;
 
     tokenizer.tokenize(text, tokens);
+
     if (use_stemming) {
       for (size_t i = 0; i < tokens.size(); ++i) {
         tokens[i] = stemmer.stem(tokens[i]);

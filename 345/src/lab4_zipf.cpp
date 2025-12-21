@@ -1,5 +1,6 @@
 #include "common.h"
 #include "tokenizer.h"
+#include "mongo_corpus.h"
 #include <iostream>
 #include <fstream>
 #include <chrono>
@@ -50,9 +51,21 @@ int main(int argc, char** argv) {
   TokenizerConfig tc{lowercase, normalize_yo, keep_numbers, min_len};
   Tokenizer tok(tc);
 
-  std::vector<std::string> files;
-  for (size_t i = 0; i < text_dirs.size(); ++i) list_txt_files(text_dirs[i], files);
-  if ((int)files.size() > max_docs) files.resize((size_t)max_docs);
+  MongoConfig mcfg;
+  int mongo_max_docs = max_docs;
+  std::string merr;
+
+  if (!LoadMongoConfigFromYaml(cfg_path, mcfg, mongo_max_docs, merr)) {
+    std::cerr << "Failed to load mongo config from yaml: " << merr << "\n";
+    return 1;
+  }
+
+  std::vector<CorpusDoc> docs;
+  if (!LoadDocsFromMongo(mcfg, mongo_max_docs, docs, merr)) {
+    std::cerr << "Failed to load docs from mongo: " << merr << "\n";
+    return 1;
+  }
+
 
   std::vector<std::string> all_tokens;
   all_tokens.reserve(2000000);
@@ -61,12 +74,11 @@ int main(int argc, char** argv) {
 
   auto t0 = std::chrono::steady_clock::now();
 
-  for (size_t i = 0; i < files.size(); ++i) {
-    std::string text;
-    if (!read_file_utf8(files[i], text)) continue;
-    tok.tokenize(text, tokens);
+    for (size_t i = 0; i < docs.size(); ++i) {
+    tok.tokenize(docs[i].text, tokens);
     for (size_t k = 0; k < tokens.size(); ++k) all_tokens.push_back(tokens[k]);
   }
+
 
   std::vector<std::string> tmp(all_tokens.size());
   merge_sort_strings(all_tokens, tmp, 0, (int)all_tokens.size());
@@ -101,7 +113,7 @@ int main(int argc, char** argv) {
   out.close();
 
   std::cout << "=== LAB4 ZIPF ===\n";
-  std::cout << "docs: " << files.size() << "\n";
+    std::cout << "docs: " << docs.size() << "\n";
   std::cout << "total_tokens: " << all_tokens.size() << "\n";
   std::cout << "unique_terms: " << freqs.size() << "\n";
   std::cout << "time_sec: " << sec << "\n";

@@ -160,6 +160,7 @@ CMakeFiles/lab5_search.dir/src/lab5_search.cpp.o: ../src/lab5_search.cpp \
   /usr/include/c++/11/bits/vector.tcc \
   ../src/tokenizer.h \
   ../src/stemmer_ru.h \
+  ../src/mongo_corpus.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -450,6 +451,8 @@ CMakeFiles/lab5_search.dir/src/lab5_search.cpp.o: ../src/lab5_search.cpp \
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/c++/11/ios:
+
+../src/mongo_corpus.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 

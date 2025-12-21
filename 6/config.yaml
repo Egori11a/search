@@ -1,7 +1,9 @@
+db:
+  uri: "mongodb://localhost:27017"
+  database: "crawler_db"
+  docs_collection: "docs"
+
 corpus:
-  text_dirs:
-    - /home/egor/search/1/recipes_corpus/povarenok/text
-    - /home/egor/search/1/recipes_corpus/koolinar/text
   max_docs: 2000
 
 tokenizer:

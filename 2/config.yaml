@@ -1,41 +1,41 @@
 db:
   uri: "mongodb://localhost:27017"
   database: "crawler_db"
+  urls_collection: "urls"
+  docs_collection: "docs"
+  state_collection: "collect_state"
 
 logic:
   delay_between_requests: [0.8, 1.8]
-  revisit_interval: 86400          # раз в сутки переобкачка
+  revisit_interval: 86400
   batch_size: 10
-  error_retry_interval: 3600       # если ошибка сети — повтор через час
+  error_retry_interval: 3600
   http_timeout: 15
-  idle_sleep_seconds: 5
-  user_agent: "EgorSearchCrawler/1.0 (lab2)"
+  idle_sleep_seconds: 2
 
-crawl:
-  parse_links_on_200: true
-  max_discovered_per_page: 200
+headers:
+  user_agent: "RecipeCorpusBot/1.0 (lab2)"
 
-  global_deny:
-    - "logout"
-    - "register"
-    - "login"
-    - "captcha"
-    - "\\.(jpg|jpeg|png|gif|webp|svg|pdf|zip|rar)$"
+collect:
+  enabled: true
+  batch_seed_size: 200
+  stop_when_targets_reached: true
 
-  rules:
-    - source: "povarenok.ru"
-      domains: ["www.povarenok.ru", "povarenok.ru"]
-      allow:
-        - "^https?://(www\\.)?povarenok\\.ru/recipes/show/\\d+/?$"
+  sites:
+    - key: "povarenok"
+      source: "povarenok.ru"
+      pattern: "https://www.povarenok.ru/recipes/show/{}/"
+      start_id: 70000
+      step: -1
+      target_per_site: 20000
+      min_html_len: 800
+      must_contain_any: ["ингредиент", "рецепт", "приготовление"]
 
-    - source: "koolinar.ru"
-      domains: ["www.koolinar.ru", "koolinar.ru"]
-      allow:
-        - "^https?://(www\\.)?koolinar\\.ru/recipe/view/\\d+/?$"
-
-seeds:
-  urls: []
-
-  meta_jsonl:
-    - "../1/recipes_corpus/povarenok/meta/meta.jsonl"
-    - "../1/recipes_corpus/koolinar/meta/meta.jsonl"
+    - key: "koolinar"
+      source: "koolinar.ru"
+      pattern: "https://www.koolinar.ru/recipe/view/{}"
+      start_id: 150000
+      step: -1
+      target_per_site: 20000
+      min_html_len: 800
+      must_contain_any: ["ингредиент", "рецепт", "приготовление"]

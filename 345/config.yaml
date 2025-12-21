@@ -19,3 +19,8 @@ search:
   b: 0.75
   top_k: 10
   use_stemming: true
+
+db:
+  uri: "mongodb://localhost:27017"
+  database: "crawler_db"
+  docs_collection: "docs"

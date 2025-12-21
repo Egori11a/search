@@ -161,6 +161,7 @@ CMakeFiles/lab5_search.dir/src/lab5_search.cpp.o
  /usr/include/c++/11/bits/vector.tcc
  /home/egor/search/345/src/tokenizer.h
  /home/egor/search/345/src/stemmer_ru.h
+ /home/egor/search/345/src/mongo_corpus.h
  /usr/include/c++/11/iostream
  /usr/include/c++/11/ostream
  /usr/include/c++/11/ios

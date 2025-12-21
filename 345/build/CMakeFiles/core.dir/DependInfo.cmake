@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/egor/search/345/src/common.cpp" "CMakeFiles/core.dir/src/common.cpp.o" "gcc" "CMakeFiles/core.dir/src/common.cpp.o.d"
+  "/home/egor/search/345/src/mongo_corpus.cpp" "CMakeFiles/core.dir/src/mongo_corpus.cpp.o" "gcc" "CMakeFiles/core.dir/src/mongo_corpus.cpp.o.d"
   "/home/egor/search/345/src/stemmer_ru.cpp" "CMakeFiles/core.dir/src/stemmer_ru.cpp.o" "gcc" "CMakeFiles/core.dir/src/stemmer_ru.cpp.o.d"
   "/home/egor/search/345/src/tokenizer.cpp" "CMakeFiles/core.dir/src/tokenizer.cpp.o" "gcc" "CMakeFiles/core.dir/src/tokenizer.cpp.o.d"
   )

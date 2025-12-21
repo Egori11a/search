@@ -1,5 +1,6 @@
 #include "common.h"
 #include "tokenizer.h"
+#include "mongo_corpus.h"
 #include <iostream>
 #include <chrono>
 
@@ -25,12 +26,21 @@ int main(int argc, char** argv) {
   tc.min_len = min_len;
   Tokenizer tok(tc);
 
-  std::vector<std::string> files;
-  for (size_t i = 0; i < text_dirs.size(); ++i) {
-    list_txt_files(text_dirs[i], files);
+  MongoConfig mcfg;
+  int mongo_max_docs = max_docs;
+  std::string merr;
+
+  if (!LoadMongoConfigFromYaml(cfg_path, mcfg, mongo_max_docs, merr)) {
+    std::cerr << "Failed to load mongo config from yaml: " << merr << "\n";
+    return 1;
   }
 
-  if ((int)files.size() > max_docs) files.resize((size_t)max_docs);
+  std::vector<CorpusDoc> docs;
+  if (!LoadDocsFromMongo(mcfg, mongo_max_docs, docs, merr)) {
+    std::cerr << "Failed to load docs from mongo: " << merr << "\n";
+    return 1;
+  }
+
 
   size_t total_bytes = 0;
   uint64_t total_tokens = 0;
@@ -40,9 +50,8 @@ int main(int argc, char** argv) {
 
   auto t0 = std::chrono::steady_clock::now();
 
-  for (size_t i = 0; i < files.size(); ++i) {
-    std::string text;
-    if (!read_file_utf8(files[i], text)) continue;
+  for (size_t i = 0; i < docs.size(); ++i) {
+    const std::string& text = docs[i].text;
 
     total_bytes += text.size();
 
@@ -62,7 +71,7 @@ int main(int argc, char** argv) {
   double speed = (sec > 0.0) ? (total_kb / sec) : 0.0;
 
   std::cout << "=== LAB3 TOKENIZATION ===\n";
-  std::cout << "docs: " << files.size() << "\n";
+  std::cout << "docs: " << docs.size() << "\n";
   std::cout << "total_text_kb: " << total_kb << "\n";
   std::cout << "total_tokens: " << total_tokens << "\n";
   std::cout << "avg_token_len_bytes: " << avg_len << "\n";

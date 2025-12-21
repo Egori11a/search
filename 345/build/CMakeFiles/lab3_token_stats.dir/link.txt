@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/lab3_token_stats.dir/src/lab3_token_stats.cpp.o -o lab3_token_stats  libcore.a 
+/usr/bin/c++ CMakeFiles/lab3_token_stats.dir/src/lab3_token_stats.cpp.o -o lab3_token_stats  libcore.a -lmongoc-1.0 -lbson-1.0 

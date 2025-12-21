@@ -85,12 +85,12 @@ clean: CMakeFiles/lab6_bool_search.dir/clean
 CMakeFiles/core.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/egor/search/6/build/CMakeFiles --progress-num=1,2,3,4 "Built target core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/egor/search/6/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target core"
 .PHONY : CMakeFiles/core.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor/search/6/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor/search/6/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/core.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor/search/6/build/CMakeFiles 0
 .PHONY : CMakeFiles/core.dir/rule
@@ -111,12 +111,12 @@ CMakeFiles/core.dir/clean:
 CMakeFiles/lab6_build_index.dir/all: CMakeFiles/core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab6_build_index.dir/build.make CMakeFiles/lab6_build_index.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab6_build_index.dir/build.make CMakeFiles/lab6_build_index.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/egor/search/6/build/CMakeFiles --progress-num=7,8 "Built target lab6_build_index"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/egor/search/6/build/CMakeFiles --progress-num=8,9 "Built target lab6_build_index"
 .PHONY : CMakeFiles/lab6_build_index.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lab6_build_index.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor/search/6/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor/search/6/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab6_build_index.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor/search/6/build/CMakeFiles 0
 .PHONY : CMakeFiles/lab6_build_index.dir/rule
@@ -137,12 +137,12 @@ CMakeFiles/lab6_build_index.dir/clean:
 CMakeFiles/lab6_bool_search.dir/all: CMakeFiles/core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab6_bool_search.dir/build.make CMakeFiles/lab6_bool_search.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab6_bool_search.dir/build.make CMakeFiles/lab6_bool_search.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/egor/search/6/build/CMakeFiles --progress-num=5,6 "Built target lab6_bool_search"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/egor/search/6/build/CMakeFiles --progress-num=6,7 "Built target lab6_bool_search"
 .PHONY : CMakeFiles/lab6_bool_search.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lab6_bool_search.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor/search/6/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor/search/6/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab6_bool_search.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/egor/search/6/build/CMakeFiles 0
 .PHONY : CMakeFiles/lab6_bool_search.dir/rule

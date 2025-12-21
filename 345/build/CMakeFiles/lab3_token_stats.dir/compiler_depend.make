@@ -159,6 +159,7 @@ CMakeFiles/lab3_token_stats.dir/src/lab3_token_stats.cpp.o: ../src/lab3_token_st
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
   ../src/tokenizer.h \
+  ../src/mongo_corpus.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -374,6 +375,8 @@ CMakeFiles/lab3_token_stats.dir/src/lab3_token_stats.cpp.o: ../src/lab3_token_st
 /usr/include/c++/11/bits/alloc_traits.h:
 
 /usr/include/c++/11/ios:
+
+../src/mongo_corpus.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
