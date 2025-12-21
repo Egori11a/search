@@ -1,0 +1,12 @@
+{
+  "overall": {
+    "stats": {
+      "avg_raw_bytes": 51545.554,
+      "avg_text_bytes": 7869.528,
+      "avg_words": 630.866,
+      "median_raw_bytes": 50056.0,
+      "median_text_bytes": 7532.5,
+      "median_words": 603.0
+    }
+  }
+}
